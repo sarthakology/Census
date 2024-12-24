@@ -17,14 +17,6 @@ import {
 const HomePage = () => {
   return (
     <>
-      {/* Header */}
-      <AppBar position="static" sx={{ mb: 4 }}>
-        <Toolbar>
-          <Typography variant="h6" component="div">
-            Census of India
-          </Typography>
-        </Toolbar>
-      </AppBar>
 
       {/* Welcome Section */}
       <Container>

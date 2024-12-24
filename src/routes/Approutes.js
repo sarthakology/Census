@@ -9,9 +9,7 @@ import HomePage from "../pages/HomePage";
 import Loader from "../components/Loader";
 import About from "../pages/About";
 import ContactUs from "../pages/ContactUs";
-import Header2 from "../components/Header2";
-import Header1 from "../components/Header1";
-import header2 from "../assets/header2.png";
+import MainHeader from "../components/MainHeader";
 
 const AppRoutes = () => {
   const { loader } = useContext(GlobalContext);
@@ -27,21 +25,7 @@ const AppRoutes = () => {
           path="/"
           element={
             <>
-              <Header1 />
-              <div
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  minHeight: "100vh",
-                }}
-              >
-                <img
-                  src={header2}
-                  alt="Header"
-                />
-              </div>
-
-              <Header2 />
+              <MainHeader />
               <HomePage />
             </>
           }
