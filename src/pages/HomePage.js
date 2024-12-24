@@ -1,7 +1,5 @@
 import React from 'react';
 import {
-  AppBar,
-  Toolbar,
   Typography,
   Box,
   Grid,
@@ -11,7 +9,6 @@ import {
   CardActions,
   Button,
   Container,
-  Divider,
 } from '@mui/material';
 
 const HomePage = () => {
@@ -139,17 +136,6 @@ const HomePage = () => {
               </Grid>
             ))}
           </Grid>
-        </Box>
-
-        {/* Footer Section */}
-        <Box sx={{ mt: 4, textAlign: 'center', backgroundColor: '#f4f4f4', padding: 2 }}>
-          <Typography variant="body1" color="textSecondary">
-            &copy; 2024 Census of India. All rights reserved.
-          </Typography>
-          <Divider sx={{ my: 2 }} />
-          <Typography variant="body2" color="textSecondary">
-            Contact: info@censusofindia.gov.in | Phone: +91 123 456 7890
-          </Typography>
         </Box>
       </Container>
     </>
