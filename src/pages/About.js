@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box, Typography, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, Grid, Button, Card, CardContent } from '@mui/material';
 import { motion } from 'framer-motion';
-
+import Header2 from "../components/Header2"
 const About = () => {
   // Census Commissioners Data
   const censusCommissioners = [
@@ -70,6 +70,8 @@ const About = () => {
   const cardBackgroundColor = "#ecf0f1";
 
   return (
+    <>
+      <Header2/>
     <Box sx={{ padding: 4, background: backgroundGradient, minHeight: "100vh" }}>
       {/* Header Section with smooth animation */}
       <motion.div variants={headerVariants} initial="hidden" animate="visible">
@@ -237,6 +239,7 @@ const About = () => {
         </Grid>
       </Grid>
     </Box>
+    </>
   );
 };
 

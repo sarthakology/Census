@@ -3,12 +3,13 @@ import { Container, Grid, TextField, Button, Typography, Paper, Box, Fade, Card 
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import { LocationOn, Email, Phone, Subject, Business } from '@mui/icons-material'; // Importing icons
-
+import Header2 from "../components/Header2"
 const ContactUs = () => {
   // Coordinates for the map
   const position = [30.735062, 76.693488];
 
-  return (
+  return (<>
+  <Header2/>
     <Fade in={true} timeout={1000}>
       <div>
         <Container maxWidth="lg" sx={{ marginTop: '2rem' }}>
@@ -166,6 +167,7 @@ const ContactUs = () => {
         </Container>
       </div>
     </Fade>
+    </>
   );
 };
 
